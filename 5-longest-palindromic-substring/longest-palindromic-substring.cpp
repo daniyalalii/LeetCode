@@ -8,7 +8,7 @@ public:
         for (int i = 0; i < s.length(); i++) {
             // for odd length
             expand(s, i, i, start, maxLen);
-            // for evern length
+            // for even length
             expand(s, i, i + 1, start, maxLen);
         }
         return s.substr(start, maxLen);
