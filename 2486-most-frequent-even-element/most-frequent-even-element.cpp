@@ -8,11 +8,9 @@ public:
             if(i%2==0) freq[i]++;
         }
         for(auto i: freq){
-            int num = i.first;
-            int count = i.second;
-            if(count>max){
-                res = num;
-                max = count;
+            if(i.second>max){
+                res = i.first;
+                max = i.second;
             }
         }
         return res;
