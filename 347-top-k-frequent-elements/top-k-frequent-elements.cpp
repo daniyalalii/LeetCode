@@ -4,7 +4,7 @@ public:
         unordered_map<int,int> freq;
         vector<int> res;
         priority_queue<pair<int,int>> pq;
-        for(int i: nums){
+        for(auto i: nums){
             freq[i]++;
         }
         for(auto i: freq){
